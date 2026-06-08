@@ -3,22 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Absen Digital KPU Sergai</title>
+    <title>Absensi KPU Sergai</title>
     <style>
-        iframe {
-            position: fixed;
-            top: 0; left: 0; bottom: 0; right: 0;
-            width: 100%; height: 100%;
-            border: none; margin: 0; padding: 0;
-            overflow: hidden; z-index: 999999;
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        .loading-box {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        a {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
         }
     </style>
+    
+    <!-- SKRIP OTOMATIS MENGALIHKAN KE WEB APP ASLI GOOGLE -->
+    <script>
+        window.location.href = "https://script.google.com/macros/s/AKfycbx_Rx7BSOrLtEFOHQ8vStGp8Q4n344M-P5O16t6Y68TfUv4oPnR-2SV7v8iYluatM5OXQ/exec";
+    </script>
 </head>
 <body>
-    <!-- Ganti URL di bawah dengan URL Google Apps Script Anda -->
-    <iframe 
-        src="https://script.google.com/macros/s/AKfycbx_Rx7BSOrLtEFOHQ8vStGp8Q4n344M-P5O16t6Y68TfUv4oPnR-2SV7v8iYluatM5OXQ/exec">
-        allow="geolocation; camera;">
-    </iframe>
+
+    <div class="loading-box">
+        <h3>Menghubungi Server Absensi...</h3>
+        <div class="spinner"></div>
+        <p>Jika halaman tidak berpindah otomatis, <a href="https://google.com">Klik di Sini</a>.</p>
+    </div>
+
 </body>
 </html>
